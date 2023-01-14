@@ -8,8 +8,6 @@
 name: Java CI with Gradle
 
 on: # 이벤트 트리거
-  push:
-    branches: [ "develop" ]
   pull_request:
     branches: [ "develop" ]
 
@@ -33,11 +31,13 @@ jobs:
       uses: gradle/gradle-build-action@v2
     - name: test with Gradle
       run: ./gradlew test
-    - name: Publish Test Report
-      uses: mikepenz/action-junit-report@v3
+    - name: Upload Test Report
+      uses: actions/upload-artifact@v3
       if: always() # always run even if the previous step fails
       with:
-        report_paths: '**/build/test-results/test/TEST-*.xml'
+        name: junit-test-results
+        path: '**/build/test-results/test/TEST-*.xml'
+        retention-days: 1
   
     - name: build with Gradle
       run: ./gradlew build -x test
