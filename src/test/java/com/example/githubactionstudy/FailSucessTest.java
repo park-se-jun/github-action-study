@@ -6,11 +6,11 @@ import org.junit.jupiter.api.Test;
 
 public class FailSucessTest {
     @Test
-    @DisplayName("테스트 실패 - 1")
+    @DisplayName("테스트 실패에서 성공으로 - 1")
     public void git_actions테스트_실패() throws Exception {
         //given
         Integer test = 1;
-        Integer expect = 10;
+        Integer expect = 2;
         //when
         test += 1;
         //then
@@ -18,11 +18,11 @@ public class FailSucessTest {
     }
 
     @Test
-    @DisplayName("테스트 실패 - 2")
+    @DisplayName("테스트 실패에서 성공으로 - 2")
     public void git_actions테스트_실패2() throws Exception {
         //given
         Integer test = 1;
-        Integer expect = 10;
+        Integer expect = 2;
         //when
         test += 1;
         //then
