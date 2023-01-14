@@ -1,23 +1,19 @@
 # CI/CD, github action에 대한 공부, 실습 레포입니다.
 
 ----
-- [CI/CD, github action에 대한 공부, 실습 레포입니다.](#ci-cd--github-action-----------------)
-  * [CI/CD?](#ci-cd-)
-    + [CI (지속적 통합)](#ci---------)
-      - [어떻게 그게 가능한가요?](#-------------)
-    + [CD](#cd)
-  * [Github Actions?](#github-actions-)
-  * [Github Actions 의 구성 요소](#github-actions--------)
-    + [Workflow](#workflow)
-    + [Event](#event)
-    + [Runner](#runner)
-    + [Job](#job)
-    + [Action](#action)
-  * [내가 이해한 Github action의 흐름](#-------github-action----)
-  * [레퍼런스](#----)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
+- [CI/CD, github action에 대한 공부, 실습 레포입니다.](#cicd-github-action에-대한-공부-실습-레포입니다)
+  - [CI/CD?](#cicd)
+    - [CI (지속적 통합)](#ci-지속적-통합)
+    - [CD](#cd)
+  - [Github Actions?](#github-actions)
+  - [Github Actions의 구성 요소](#github-actions의-구성-요소)
+    - [Workflow](#workflow)
+    - [Event](#event)
+    - [Runner](#runner)
+    - [Job](#job)
+    - [Action](#action)
+  - [내가 이해한 Github action의 흐름](#내가-이해한-github-action의-흐름)
+  - [레퍼런스](#레퍼런스)
 
 ----
 ## CI/CD?
@@ -49,7 +45,7 @@
   2. cron job 
      -  레포지토리에대해 특정 시간에 스크립트를 반복 실행 시킬 수 있다.
 
-## Github Actions 의 구성 요소
+## Github Actions의 구성 요소
 
 - github actions는 다음과 같은 [구성요소](https://docs.github.com/ko/actions/learn-github-actions/understanding-github-actions#the-components-of-github-actions)를 지닌다. 각각에 대한 한줄 정보는 아래와 같다.
   - [workflow](https://docs.github.com/ko/actions/learn-github-actions/understanding-github-actions#workflows) 
