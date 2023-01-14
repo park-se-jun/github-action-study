@@ -20,6 +20,7 @@ jobs:
   gradle:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v3 #https://github.com/marketplace/actions/checkout < actions 주소
     - name: Run chmod to make gradlew executable
       run: chmod +x ./gradlew
   
@@ -28,7 +29,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3 #https://github.com/marketplace/actions/checkout < actions 주소
     - name: Set up JDK 17
       uses: actions/setup-java@v3
       with:
