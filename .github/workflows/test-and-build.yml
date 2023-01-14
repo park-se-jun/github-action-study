@@ -17,7 +17,14 @@ permissions:
   contents: read
 
 jobs:
+  gradle:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run chmod to make gradlew executable
+      run: chmod +x ./gradlew
+  
   test:
+    needs: gradle
     runs-on: ubuntu-latest
 
     steps:
