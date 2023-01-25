@@ -26,7 +26,8 @@ jobs:
         distribution: 'corretto'
     - name: Setup Gradle
       uses: gradle/gradle-build-action@v2
-      
+    - name: setup Gradle permission
+      run: chmod +x gradlew 
     - name: Execute bootJar
       run: ./gradlew bootJar
       
