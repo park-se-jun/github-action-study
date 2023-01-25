@@ -47,5 +47,5 @@ jobs:
           sudo docker pull ${{secrets.DOCKER_REPO}}
           touch ./application.yml
           echo "${{secrets.APPLICATION_YML}}" > ./application.yml
-          docker run -d --name test-server1 -p 8080:8080 -v $(pwd)/application.yml:/config/application.properties ${{secrets.DOCKER_REPO}}
+          docker run -d --name test-server1 -p 8080:8080 -v $(pwd)/application.yml:/config/application.yml ${{secrets.DOCKER_REPO}}
           
